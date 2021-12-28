@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Noto sans";
+}
+
+ul,
+li,
+p {
+  padding: 0;
+}
+
+.header {
+  height: 100vh;
+  background: url(../images/car1.jpg) no-repeat center / cover;
+
+  &__title {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    color: #f8f8f8;
+    // letter-spacing: 2px;
+  }
+
+  &__info {
+    margin-bottom: 72px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #f8f8f8;
+  }
+
+  &__button {
+    width: 295px;
+    background-color: transparent;
+    border: 2px solid #f8f8f8;
+    height: 56px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #f8f8f8;
+  }
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.navbar {
+  padding: 20px 0 0;
+  margin-bottom: 136px;
+}
+
+.nav {
+  &__item {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 44px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    color: #f8f8f8;
+  }
+
+  &__social {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
+
+.offers {
+  padding: 100px 0;
+  background-color: #e5e5e5;
+
+  &__title {
+    font-family: "Poppins";
+    margin-bottom: 80px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #AEAEAE;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  &__button {
+    width: 170px;
+    height: 48px;
+    margin-right: 20px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #BDBDBD;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    outline: none;
+  }
+
+  &__button--special {
+    width: 290px;
+    background-color: #DF4E3C;
+    border: 2px solid #DF4E3C;
+    color: #F8F8F8;
+    border-radius: 15px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__form {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #8D8D8D;
+    border-radius: 3px;
+    line-height: 16px;
+    background-color: #E5E5E5;
+  }
+
+  &__checkbox:checked+label::before {
+    border-color: #DF4E3C;
+    background-color: #DF4E3C;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+
+  &__label {
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    color: #8D8D8D;
+
+    &:target {
+      color: #DF4E3C;
+    }
+  }
+}
+
+.col-3:nth-child(4n + 1) {
+  padding-left: 0;
+}
+
+.card {
+  height: 366px;
+  width: 295px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+
+  &__title {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: 17px;
+    line-height: 23px;
+    color: #000000;
+  }
+
+  &__year {
+    margin-right: 8px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #8D8D8D;
+  }
+
+  &__text {
+    margin-bottom: 26px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #8D8D8D;
+  }
+}
