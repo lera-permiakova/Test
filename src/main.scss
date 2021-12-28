@@ -1,3 +1,9 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$grid-gutter-width: 20px;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +28,7 @@ p {
 
 .header {
   height: 100vh;
-  background: url(../images/car1.jpg) no-repeat center / cover;
+  background: url(../src/images/car1.jpg) no-repeat center / cover;
 
   &__title {
     margin-bottom: 32px;
@@ -30,7 +36,6 @@ p {
     font-size: 50px;
     line-height: 68px;
     color: #f8f8f8;
-    // letter-spacing: 2px;
   }
 
   &__info {
@@ -56,6 +61,7 @@ p {
 }
 
 .container {
+  padding: 0;
   max-width: 1240px;
 }
 
@@ -133,7 +139,7 @@ p {
   }
 
   &__form {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
   }
@@ -156,6 +162,7 @@ p {
     width: 16px;
     height: 16px;
     margin-right: 8px;
+
     border: 1px solid #8D8D8D;
     border-radius: 3px;
     line-height: 16px;
@@ -181,20 +188,46 @@ p {
   }
 }
 
-.col-3:nth-child(4n + 1) {
-  padding-left: 0;
-}
-
 .card {
   height: 366px;
   width: 295px;
-  margin-bottom: 20px;
   box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+
+  &__sold {
+    opacity: 70%;
+
+    &::after {
+      position: absolute;
+      content: "SOLD";
+      left: 50%;
+      top: 17%;
+      transform: translateX(-50%);
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 75px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    &::after {
+      content: "something";
+      color: redж
+    }
+  }
+
+  &__image--sold {
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
 
   &__title {
     margin-bottom: 16px;
     display: flex;
-    align-items: center;
   }
 
   &__name {
@@ -204,6 +237,8 @@ p {
   }
 
   &__year {
+    font-family: "Poppins";
+    font-weight: 400;
     margin-right: 8px;
     font-size: 17px;
     line-height: 25px;
@@ -216,5 +251,12 @@ p {
     font-size: 14px;
     line-height: 19px;
     color: #8D8D8D;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
   }
 }
