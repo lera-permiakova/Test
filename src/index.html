@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <title>Test</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container px-0">
+      <nav class="navbar navbar-expand-lg px-0">
+        <div class="container-fluid px-0">
+          <a class="nav__link logo" href="#">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <ul class="nav">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Inventory</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Financing</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contacts</a>
+            </li>
+            <li class="nav__social">
+              <a class="nav__link" href="https://www.facebook.com/">
+                <img src="./images/Vector.svg" alt="facebook">
+              </a>
+            </li>
+            <li class="nav__social">
+              <a class="nav__link" href="https://www.instagram.com/">
+                <img src="./images/insta.svg" alt="instagram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <h1 class="header__title">
+        The right way to get a car
+      </h1>
+      <div class="header__info row">
+        <div class="header__block col-3 pr-10">
+          <p class="header__text p-0">
+            Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced online vehicle purchasing experience with integrated financing and contactless home delivery.
+          </p>
+        </div>
+        <div class="header__block col-3 pl-10">
+          <p class="header__text">
+            All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza Motorsports
+              <br>
+            has been the benchmark for innovation in the automotive industry.
+          </p>
+        </div>
+      </div>
+      <button class="header__button">Browse cars</button>
+    </div>
+  </header>
+  <main>
+    <section class="offers">
+      <div class="container">
+        <h2 class="offers__title">
+          Current offers
+        </h2>
+        <div class="offers__buttons">
+          <button type="button" class="dropdown-toggle offers__button">Year</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button type="button" class="dropdown-toggle offers__button">Make</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button type="button" class="dropdown-toggle offers__button">Model</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button type="button" class="dropdown-toggle offers__button">Trim</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button type="button" class="dropdown-toggle offers__button">Mileage</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <button type="button" class="offers__button--special"> 40 cars</button>
+        </div>
+        <div class="offers__form">
+          <input type="checkbox" class="offers__checkbox" id="сheck">
+          <label class="offers__label" for="сheck">
+            Instantly available vehicles
+          </label>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/volkswager1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2019</p>
+                  <h6 class="card__name">Volkswagen Tiguan</h6>
+                </div>
+                <p class="card__text">19,855 km | Automatic | Diesel</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2014</p>
+                  <h6 class="card__name">Toyota Highlander XLE</h6>
+                </div>
+                <p class="card__text">69,000 km | Automatic | Gas</p>
+                <p>$27,875</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2017</p>
+                  <h6 class="card__name">Lexus RX 350 LUXURY</h6>
+                </div>
+                <p class="card__text">39,850 km | Automatic | Gas</p>
+                <p>$38,775</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Toyota Highlander LE A...</h6>
+                </div>
+                <p class="card__text">104,000 km | Automatic | Gas</p>
+                <p>$23,728</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2017</p>
+                  <h6 class="card__name">Hyundai Elantra</h6>
+                </div>
+                <p class="card__text">95,000 km | Automatic | Gas</p>
+                <p>$11,788</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Mercedes-Benz GLE-Cl...</h6>
+                </div>
+                <p class="card__text">59,800 km | Automatic | Diesel</p>
+                <p>$38,878</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car7.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2015</p>
+                  <h6 class="card__name">Toyota Venza AWD XLE...</h6>
+                </div>
+                <p class="card__text">99,000 km | Automatic | Gas</p>
+                <p>$18,620</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car8.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Lexus RX 350 F-SPORT</h6>
+                </div>
+                <p class="card__text">86,000 km | Automatic | Gas</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/volkswager1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2019</p>
+                  <h6 class="card__name">Volkswagen Tiguan</h6>
+                </div>
+                <p class="card__text">19,855 km | Automatic | Diesel</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2014</p>
+                  <h6 class="card__name">Toyota Highlander XLE</h6>
+                </div>
+                <p class="card__text">69,000 km | Automatic | Gas</p>
+                <p>$27,875</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2017</p>
+                  <h6 class="card__name">Lexus RX 350 LUXURY</h6>
+                </div>
+                <p class="card__text">39,850 km | Automatic | Gas</p>
+                <p>$38,775</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Toyota Highlander LE A...</h6>
+                </div>
+                <p class="card__text">104,000 km | Automatic | Gas</p>
+                <p>$23,728</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/volkswager1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2019</p>
+                  <h6 class="card__name">Volkswagen Tiguan</h6>
+                </div>
+                <p class="card__text">19,855 km | Automatic | Diesel</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2014</p>
+                  <h6 class="card__name">Toyota Highlander XLE</h6>
+                </div>
+                <p class="card__text">69,000 km | Automatic | Gas</p>
+                <p>$27,875</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2017</p>
+                  <h6 class="card__name">Lexus RX 350 LUXURY</h6>
+                </div>
+                <p class="card__text">39,850 km | Automatic | Gas</p>
+                <p>$38,775</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Toyota Highlander LE A...</h6>
+                </div>
+                <p class="card__text">104,000 km | Automatic | Gas</p>
+                <p>$23,728</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car5.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2017</p>
+                  <h6 class="card__name">Hyundai Elantra</h6>
+                </div>
+                <p class="card__text">95,000 km | Automatic | Gas</p>
+                <p>$11,788</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car6.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Mercedes-Benz GLE-Cl...</h6>
+                </div>
+                <p class="card__text">59,800 km | Automatic | Diesel</p>
+                <p>$38,878</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car7.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2015</p>
+                  <h6 class="card__name">Toyota Venza AWD XLE...</h6>
+                </div>
+                <p class="card__text">99,000 km | Automatic | Gas</p>
+                <p>$18,620</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car8.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2016</p>
+                  <h6 class="card__name">Lexus RX 350 F-SPORT</h6>
+                </div>
+                <p class="card__text">86,000 km | Automatic | Gas</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/volkswager1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2019</p>
+                  <h6 class="card__name">Volkswagen Tiguan</h6>
+                </div>
+                <p class="card__text">19,855 km | Automatic | Diesel</p>
+                <p>$34,888</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img class="card-img-top" src="./images/car2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <div class="card__title">
+                  <p class="card__year">2014</p>
+                  <h6 class="card__name">Toyota Highlander XLE</h6>
+                </div>
+                <p class="card__text">69,000 km | Automatic | Gas</p>
+                <p>$27,875</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
