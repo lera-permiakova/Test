@@ -1,0 +1,38 @@
+.footer {
+  padding: 36px 0;
+  background-color: $color-primary-100;
+
+  &__logo {
+    margin-left: -20px;
+  }
+
+  &__actions {
+    align-self: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: $mainSize;
+    line-height: 20px;
+    color: $color-primary-200;
+
+    &:hover {
+      color: $color-primary-200;
+    }
+  }
+
+  &__social {
+    align-self: center;
+    text-align: right;
+  }
+
+  &__item {
+    text-decoration: none;
+
+    &:first-child {
+      margin-right: 32px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.header {
+  height: 100vh;
+  background: url(../src/images/car1.jpg) no-repeat center / cover;
+
+  &__title {
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: $titleSize;
+    line-height: 68px;
+    color: $color-primary-200;
+  }
+
+  &__info {
+    margin-bottom: 72px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $mainSize;
+    line-height: 20px;
+    color: $color-primary-200;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+    border: 2px solid $color-primary-200;
+    height: 56px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: $averageSize;
+    line-height: 27px;
+    background-color: transparent;
+    color: $color-primary-200;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $color-primary-200;
+      color: $color-primary-100;
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $color-primary-200;
+    }
+  }
+}

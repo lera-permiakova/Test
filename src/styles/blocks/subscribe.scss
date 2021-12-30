@@ -1,0 +1,77 @@
+.subscribe {
+  padding: 40px 0;
+  background-color: $color-primary-100;
+  box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+
+  &__content {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: $secondaryTitleSize;
+    line-height: 34px;
+    color: $color-primary-200;
+  }
+
+  &__text {
+    max-width: 428px;
+    font-size: $mainSize;
+    line-height: 20px;
+    color: $color-primary-200;
+  }
+
+  &__form {
+    display: flex;
+    align-self: center;
+  }
+
+  &__input {
+    margin-right: 20px;
+    width: 504px;
+    height: 54px;
+    background-color: transparent;
+    border: 1px solid $color-secondary-300;
+    border-radius: 15px;
+
+    &::placeholder {
+      font-size: $mainSize;
+      line-height: 20px;
+      color: $color-primary-200;
+    }
+
+    &:focus {
+      border-color: $color-secondary-200;
+      background-color: $color-primary-200;
+      box-shadow: none;
+
+      &::placeholder {
+        color: $color-primary-200;
+      }
+    }
+
+    &::valid {
+      border-color: $color-secondary-700;
+    }
+  }
+
+  &__button {
+    width: 190px;
+    height: 54px;
+    border: $color-primary-200 solid 1px;
+    background-color: $color-primary-200;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $color-primary-100;
+      color: $color-primary-200;
+    }
+
+    &:active {
+      background-color: $color-primary-200;
+      color: $color-primary-100;
+    }
+  }
+}

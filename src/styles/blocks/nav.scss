@@ -1,0 +1,31 @@
+.nav {
+  &__item {
+    margin-right: 40px;
+    transition: transform 0.3s;
+
+    &:last-child {
+      margin-right: 44px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: $mainSize;
+    color: $color-primary-200;
+
+    &:hover {
+      color: $color-primary-200;
+    }
+  }
+
+  &__social {
+
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
