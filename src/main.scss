@@ -139,7 +139,7 @@ p {
   }
 
   &__form {
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
   }
@@ -191,6 +191,7 @@ p {
 .card {
   height: 366px;
   width: 295px;
+  margin-bottom: 20px;
   box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
 
   &__sold {
@@ -215,7 +216,7 @@ p {
 
     &::after {
       content: "something";
-      color: redж
+      color: red;
     }
   }
 
@@ -253,10 +254,15 @@ p {
     color: #8D8D8D;
   }
 
-  &__price {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #000000;
-  }
+  // &__price {
+  //   font-weight: 500;
+  //   font-size: 20px;
+  //   line-height: 27px;
+  //   color: #000000;
+  // }
+}
+
+.subscribe {
+  // height: 180px;
+  background-color: #000;
 }
