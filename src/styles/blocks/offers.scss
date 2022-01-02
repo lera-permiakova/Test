@@ -15,13 +15,14 @@
 
   &__buttons {
     display: flex;
-    margin-bottom: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
   }
 
   &__button {
     width: 170px;
     height: 48px;
-    margin-right: 20px;
+    margin: 0 20px 20px 0;
     padding: 0 16px;
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,8 @@
 
   &__button--special {
     width: 290px;
+    height: 48px;
+    margin-bottom: 20px;
     border: 2px solid $color-primary-300;
     background-color: $color-primary-300;
     color: $color-primary-200;
@@ -63,8 +66,9 @@
   }
 
   &__form {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
 
@@ -100,13 +104,16 @@
   }
 
   &__label {
+    margin-bottom: 8px;
     font-size: $smallSize;
+    margin-right: 80px;
     height: 16px;
     line-height: 16px;
     color: $color-secondary-200;
   }
 
   &__sort {
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
   }
